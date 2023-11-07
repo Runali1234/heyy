@@ -1,0 +1,101 @@
+.NavBarItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 0px 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    width:95%;
+    height:80px;
+    border-radius: 13px;
+  }
+  
+  .nav-logo{
+    color: blue;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+  }
+
+  
+  .nav-links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: brown;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-links i{
+    padding-right: 10px;
+  }
+
+  .navbar li a:hover{
+    background-color: #17cf97;
+    color: aliceblue;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  {/*#navbar li a.active {
+    color: #17cf97;
+  }
+  
+  #navbar li a:hover::after,
+  #navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  } */}
+  
+  #mobile {
+    display: none;
+  }
+  
+  #mobile i {
+    color: black;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 769px) {
+    #nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 90px;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background: #2a3239;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 40px 0 0 10px;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .menu-Icons{
+       margin-right: 500px;
+    }
+   
+  
+    .nav-links-mobile {
+      display: none;
+    }
+  
+  }
